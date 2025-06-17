@@ -20,16 +20,24 @@ A simple Rock, Paper, Scissors game written in C++. Play against the computer di
 1. **Clone the repository**
    ```bash
    git clone https://github.com/Mazen-Eltelbany/Rock-Paper-Scissors-game.git
+   ```
 
-2.Navigate to the project directory
+2.**Navigate to the project directory**
+
 ```bash
   cd Rock-Paper-Scissors-game
 ```
-3.Compile and run
+
+3.**Compile and run**
+"If you don't have a g++ compiler download from this video"
+<a href="https://youtu.be/GxFiUEO_3zM">The Installation guide</a>
+
 ```bash
 g++ -o rps RockPaperScissors.cpp
 ./rps
 ```
-👤 Author
+
+## 👤 Author
+
 - Name: Mazen Eltelbany
 - GitHub: @Mazen-Eltelbany

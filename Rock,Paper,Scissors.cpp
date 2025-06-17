@@ -4,6 +4,13 @@
 #include<cmath>
 #include<ctime>
 using namespace std;
+void clearScreen() {
+#ifdef _WIN32
+	system("cls");
+#else
+	system("clear");
+#endif
+}
 int askuser(string message) {
 	int n;
 	cout << message << endl;
@@ -82,7 +89,7 @@ void conti(int n) {
 		cout << "do you want to play again ?Y/N?\n";
 		cin >> m;
 		if (m == 'Y' || m == 'y') {
-			system("cls");
+			clearScreen();
 			system("color 0F");
 			n = askuser("enter how many round you want to play from 1:10");
 
