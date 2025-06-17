@@ -30,17 +30,20 @@ void  check(int yourchoice, int compchoice, int c, int& howtimecomp, int& howtim
 	if (compchoice == yourchoice) {
 		system("color 6F");
 		cout << "round winner:[no one]\n";
+		cout << "----------------------------------------------\n";
 		tied++;
 	}
 	else if ((compchoice == 2 && yourchoice == 3) || (compchoice == 1 && yourchoice == 2) || (compchoice == 3 && yourchoice == 1)) {
 		system("color 4F");
 		cout << "round winner:[computer]\n\a";
+		cout << "----------------------------------------------\n";
 		howtimecomp++;
 	}
 	else
 	{
 		system("color 2A");
 		cout << "round winner:[player1]\n";
+		cout << "----------------------------------------------\n";
 		howtimesplayer++;
 	}
 
@@ -85,6 +88,7 @@ void choose(int n) {
 void conti(int n) {
 	char m;
 	do {
+		clearScreen();
 		choose(n);
 		cout << "do you want to play again ?Y/N?\n";
 		cin >> m;
