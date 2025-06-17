@@ -33,7 +33,7 @@ A simple Rock, Paper, Scissors game written in C++. Play against the computer di
 <a href="https://youtu.be/GxFiUEO_3zM">The Installation guide</a>
 
 ```bash
-g++ -o rps RockPaperScissors.cpp
+g++ Rock-Paper-Scissors.cpp -o rps
 ./rps
 ```
 
