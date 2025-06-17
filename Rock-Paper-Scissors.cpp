@@ -57,7 +57,7 @@ void choose(int n) {
 		do {
 			cout << "enter your choice (1)rock,(2)scissors,(3)paper:";
 			cin >> choice;
-		} while (choice > 3||choice<1);
+		} while (choice > 3 || choice < 1);
 
 		int compchoice = randomchoicecomp(1, 3);
 		check(choice, compchoice, i, howtimecomp, howtimesplayer, tied);
@@ -73,12 +73,12 @@ void choose(int n) {
 	if (howtimesplayer > howtimecomp) {
 		system("color 2A");
 		cout << "the final winner is: player\n";
-		
+
 	}
 	else if (howtimesplayer < howtimecomp) {
 		system("color 4F");
 		cout << "the final winner is: computer\n";
-		
+
 	}
 	else {
 		cout << "the final winner is: no one\n";
@@ -88,7 +88,7 @@ void choose(int n) {
 void conti(int n) {
 	char m;
 	do {
-		clearScreen();
+
 		choose(n);
 		cout << "do you want to play again ?Y/N?\n";
 		cin >> m;
@@ -105,6 +105,7 @@ void conti(int n) {
 int main() {
 	srand((unsigned)time(NULL));
 	int n;
+	clearScreen();
 	n = askuser("enter how many round you want to play from 1:10");
 	while (n < 1 || n>10) {
 		n = askuser("enter how many round you want to play from 1:10");
